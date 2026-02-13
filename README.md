@@ -40,7 +40,7 @@ The blur at sigma 0.4 is effectively invisible to the human eye but completely d
 ## Build
 
 ```
-v -prod src/main.v -o screenshot_sanitizer
+v -prod stripshot -o stripshot
 ```
 
 ## Usage
@@ -48,31 +48,31 @@ v -prod src/main.v -o screenshot_sanitizer
 Basic usage:
 
 ```
-screenshot_sanitizer -i screenshot.png -o clean.png
+stripshot -i screenshot.png -o clean.png
 ```
 
 With custom parameters:
 
 ```
-screenshot_sanitizer -i input.png -o output.png --blur 0.5 --noise 3
+stripshot -i input.png -o output.png --blur 0.5 --noise 3
 ```
 
 Process all images in a directory:
 
 ```
-screenshot_sanitizer --batch ./screenshots/
+stripshot --batch ./screenshots/
 ```
 
 Metadata strip only (no pixel modification):
 
 ```
-screenshot_sanitizer -i input.png -o output.png --no-blur --no-noise --no-color-norm
+stripshot -i input.png -o output.png --no-blur --no-noise --no-color-norm
 ```
 
 See ffmpeg commands being executed:
 
 ```
-screenshot_sanitizer -i input.png -o output.png --verbose
+stripshot -i input.png -o output.png --verbose
 ```
 
 ## Options
