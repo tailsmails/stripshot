@@ -132,5 +132,3 @@ For subpixel verification, zoom into text edges at 400-800% in an image editor. 
 
 ## License
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
-
-```
